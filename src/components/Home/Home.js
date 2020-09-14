@@ -12,7 +12,7 @@ const Home = () => {
   }
   return (
     <div>
-      <h1>Home Page</h1>
+     
       <div className='my-4'>
                 <FoodItemNav handleItem={handleItem}></FoodItemNav>
             </div>
@@ -21,12 +21,12 @@ const Home = () => {
            <div className='row d-flex justify-content-between mx-2'>
 
     {
-       items.map(item=> <FoodItem item={item}></FoodItem>)
+       items.map(item=> <FoodItem item={item} key={item.name}></FoodItem>)
           }
             </div>
 
             <div className="text-center">
-              <button>Checkout Your Food</button> 
+              <button >Checkout Your Food</button> 
             </div>
      
 
