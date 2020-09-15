@@ -21,7 +21,7 @@ const Home = () => {
            <div className='row d-flex justify-content-between mx-2'>
 
     {
-       items.map(item=> <FoodItem item={item} key={item.name}></FoodItem>)
+       items.map(item=> <FoodItem item={item} key={item.id}></FoodItem>)
           }
             </div>
 

@@ -34,6 +34,10 @@ function App() {
           <Home></Home>
 
         </Route>
+        <Route path="/item/:itemKey">
+          <ItemDetails></ItemDetails>
+
+        </Route>
         <Route path="*">
             <NotMatch></NotMatch>
           </Route>
