@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import fakeData from '../fakeData/fakeData';
 import FoodItem from '../FoodItem/FoodItem';
 import FoodItemNav from '../FoodItemNav/FoodItemNav';
+import Footer from '../Footer/Footer';
+import WhyChoose from '../WhyChoose/WhyChoose';
 
 
 const Home = () => {
@@ -30,8 +32,8 @@ const Home = () => {
             </div>
      
 
-
-
+<WhyChoose></WhyChoose>
+<Footer></Footer>
    
     </div>
   );
