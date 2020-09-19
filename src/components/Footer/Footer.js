@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className="col-3">
                     <a href='/'>About Online Food</a><br/>
                     <a href='/'>Read Our Blog</a><br/>
-                    <a href='/signup'>Sign Up For Delivery</a><br/>
+                    <a href='/login'>Sign Up For Delivery</a><br/>
                     <a href='/'>Add Your Restaurant</a><br/>
                 </div>
                 <div className="col-3">

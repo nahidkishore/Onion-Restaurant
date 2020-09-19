@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.secondary,
   },
   title: {
-    fontSize: 14,
+    fontSize: 18,
   },
   media: {
     height: 400,
@@ -33,11 +33,6 @@ const useStyles = makeStyles((theme) => ({
   pos: {
     marginBottom: 12,
   },
-  button: {
-    color:'primary',
-     size:'small',
-     textAlign: 'center',
-  }
 }));
 
 const FoodItem = (props) => {
@@ -69,14 +64,14 @@ history.push(`/item/${id}`)
         <Typography variant="h5" component="p">
           {details}
         </Typography>
-        <Typography className={classes.pos} color="textSecondary">
+        <Typography className={classes.pos} color="textPrimary">
           ${price}
         </Typography>
       
       </CardContent>
       </CardActionArea>
       <CardActions>
-      <Button onClick={handleDetails} className={classes.button} >Details More</Button>
+      <Button onClick={handleDetails} >Details More</Button>
       
      
       </CardActions>

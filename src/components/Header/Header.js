@@ -6,7 +6,7 @@ import './Header.css';
 import { Link, useHistory } from 'react-router-dom';
 import { UserContext } from '../../App';
 import { handleSignOut } from '../Login/LoginManager';
-
+import logo from '../../components/Resource/logo.png'
 
 const Header = () => {
 
@@ -25,8 +25,8 @@ const Header = () => {
   };
   return (
    <div>
-      <Navbar bg="dark" variant="dark">
-    <Navbar.Brand href= ""><img src="../Resource/logo2.png" alt=""/></Navbar.Brand>
+      <Navbar bg="dark" variant="dark" >
+    <Navbar.Brand className="brand" href= ""><img src={logo} alt=""/></Navbar.Brand>
     <Nav className="ml-auto">
       <Nav.Link href="#"><FontAwesomeIcon icon={faCartPlus} /></Nav.Link>
     

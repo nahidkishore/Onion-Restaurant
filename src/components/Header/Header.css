@@ -1,7 +1,7 @@
 .banner{
   background-image: url('../../components/Resource/bannerbackground.png');
   background-size: cover;
-    height: 700px;
+    height: 500px;
     background-repeat: no-repeat;
 }
 
@@ -14,3 +14,8 @@
   margin-left: 40%;
  
 }
+
+.brand img{
+  height: 30px;
+}
+
