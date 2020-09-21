@@ -26,7 +26,7 @@ const Header = () => {
   return (
    <div>
       <Navbar bg="dark" variant="dark" >
-    <Navbar.Brand className="brand" href= ""><img src={logo} alt=""/></Navbar.Brand>
+    <Navbar.Brand className="brand" href= ""><Link to="/"><img src={logo} alt=""/></Link></Navbar.Brand>
     <Nav className="ml-auto">
       <Nav.Link href="#"><FontAwesomeIcon icon={faCartPlus} /></Nav.Link>
     

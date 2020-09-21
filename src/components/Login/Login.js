@@ -4,7 +4,7 @@ import { UserContext } from '../../App';
 import { useHistory, useLocation } from 'react-router-dom';
 import { initializeLoginFramework, handleGoogleSignIn, handleSignOut, handleFbSignIn, createUserWithEmailAndPassword, signInWithEmailAndPassword } from './LoginManager';
 import { Button, Container, Form, FormControl,} from 'react-bootstrap';
-
+import './Login.css';
 
 function Login() {
   const [newUser, setNewUser] = useState(false);
@@ -89,32 +89,33 @@ function Login() {
 
 
   return (
-    <div style={{textAlign: 'center'}}>
+    <div >
       
       
 
      {/*  <h1>Our own Authentication</h1> */}
-      <Container>
-        <div className="">
+      <Container className="d-flex justify-content-center loginForm">
+        <div >
         
-          <Form onSubmit={handleSubmit}>
-          <h1 style={{color:'greenyellow'}} className="my-4">{newUser ? 'Create an Account' : 'User Login'}</h1>
+          <form onSubmit={handleSubmit}>
+          <h1 style={{color:'greenyellow', textAlign:'center'}} >{newUser ? 'Create an Account' : 'User Login'}</h1>
           {
-            newUser && <FormControl onBlur={handleBlur} name="name" type="text" placeholder="Your Name" className="my-3 bg-light" required />
+            newUser && <input onBlur={handleBlur} name="name" type="text" placeholder="Your Name"  required />
               }
+              <br/> <br/>
 
-             <FormControl onBlur={handleBlur} name="email" type="email" placeholder="Your Email" className="my-3 bg-light" required />
+             <input onBlur={handleBlur} name="email" type="email" placeholder="Your Email"   required /> <br/> <br/>
 
-             <FormControl onBlur={handleBlur} name="password" type="password" placeholder="Your Password" className="my-3 bg-light" required />
+             <input onBlur={handleBlur} name="password" type="password" placeholder="Your Password"  required /> <br/> <br/>
 
         {
-           newUser && <FormControl onBlur={handleBlur}  type="password" name="confirm" placeholder="Confirm Password" className="my-3 bg-light" required />
+           newUser && <input onBlur={handleBlur}  type="password" name="confirm" placeholder="Confirm Password"  required /> 
                }
+<br/> <br/>
+           <button className="btn-warning btn-sm" type="submit">{newUser ? 'Create an Account' : 'Login'}</button>
 
-           <Button className="btn-warning btn-sm" type="submit">{newUser ? 'Create an Account' : 'Login'}</Button>
 
-
-          </Form>
+          </form>
           
       {/* <label htmlFor="newUser">Don't have an account? </label>  <input type="checkbox" onChange={() => setNewUser(!newUser)} name="newUser" id=""/> */}
 
@@ -125,11 +126,11 @@ function Login() {
       { user.success && <p style={{color: 'green'}}>User { newUser ? 'created' : 'Logged In'} successfully</p>}
        <p style={{textAlign: 'center',textColor: 'green', weight: 'bold'}}>--------Or-----------</p>
 
-          { user.isSignedIn ? <Button onClick={signOut}>Sign Out</Button> :
-        <Button onClick={googleSignIn}> Continue With Google Sign In</Button>
+          { user.isSignedIn ? <button onClick={signOut}>Sign Out</button> :
+        <button className="btn btn-info" onClick={googleSignIn}>Continue With Google Sign In</button>
       }
       <br/> <br/>
-      <Button variant="success"  onClick={fbSignIn}>Continue With Facebook Sign In</Button>
+      <button className="btn btn-warning" onClick={fbSignIn}>Continue With Facebook Sign In </button>
         </div>
       </Container>
       {
