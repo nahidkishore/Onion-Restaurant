@@ -112,7 +112,7 @@ function Login() {
            newUser && <input onBlur={handleBlur}  type="password" name="confirm" placeholder="Confirm Password"  required /> 
                }
 <br/> <br/>
-           <button className="btn-warning btn-sm" type="submit">{newUser ? 'Create an Account' : 'Login'}</button>
+           <button className="btn-warning btn-md" type="submit">{newUser ? 'Create an Account' : 'Login'}</button>
 
 
           </form>

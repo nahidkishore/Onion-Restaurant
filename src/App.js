@@ -14,6 +14,8 @@ import ItemDetails from './components/ItemDetails/ItemDetails';
 import Login from './components/Login/Login';
 import NotMatch from './components/NotMatch/NotMatch';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Shipment from './components/Shipment/Shipment';
+
 
 export const UserContext = createContext();
 function App() {
@@ -43,8 +45,8 @@ function App() {
           <ItemDetails></ItemDetails>
 
         </Route>
-        <PrivateRoute path="/checkout">
-      <Checkout></Checkout>
+        <PrivateRoute path="/shipment">
+        <Shipment></Shipment>
         </PrivateRoute>
         
         <Route path="*">

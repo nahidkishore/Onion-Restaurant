@@ -48,7 +48,7 @@ const ItemDetails = () => {
 
   let history = useHistory();
   const handleCheckout= () => {
-  history.push("/checkout")
+  history.push("/shipment")
   }
 
   const {itemKey}= useParams();
