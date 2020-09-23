@@ -17,7 +17,9 @@ const Shipment = () => {
   history.push("/home")
   }
   return (
-    <form className="ship-form" onSubmit={handleSubmit(onSubmit)}>
+    <div>
+<div className="col-6 col-md-6">
+<form className="ship-form" onSubmit={handleSubmit(onSubmit)}>
       
       <input name="name" defaultValue={loggedInUser.name} ref={register({ required: true })} placeholder="Your name" />
       {errors.name && <span className="error">Name is required</span>}
@@ -35,6 +37,13 @@ const Shipment = () => {
       <button onClick={handleSave} className="btn btn-info" type="submit">Save & Continue</button>
       
     </form>
+</div>
+<div className="col-6 col-md-6">
+<h3>Cart Details</h3>
+
+</div>
+    </div>
+    
   );
 };
 

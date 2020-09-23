@@ -12,10 +12,10 @@ import { Link, useHistory } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
-    minWidth: 375,
+    flexGrow: 2,
+    minWidth: 475,
     textAlign: 'center',
-    padding: theme.spacing(2),
+    padding: theme.spacing(3),
  
   },
   paper: {
@@ -48,7 +48,7 @@ history.push(`/item/${id}`)
 
 <div >
       <Grid className={classes.root} container spacing={6} justify="space-between">
-        <Grid item xs={12}  >
+        <Grid item xs={12} md={6}  >
           {/* <Paper className={classes.paper}>xs=12</Paper> */}
           <Card className={classes.root} variant="outlined">
           <CardActionArea onClick={handleDetails}>
@@ -71,7 +71,7 @@ history.push(`/item/${id}`)
       </CardContent>
       </CardActionArea>
       <CardActions>
-      <Button onClick={handleDetails} >Details More</Button>
+     {/*  <Button onClick={handleDetails} style={{textAlign: 'center', paddingLeft:'35%'}}>Details More</Button> */}
       
      
       </CardActions>

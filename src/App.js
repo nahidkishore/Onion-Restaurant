@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import './App.css';
+import Cart from './components/Cart/Cart';
 import Checkout from './components/Checkout/Checkout';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
@@ -48,6 +49,9 @@ function App() {
         <PrivateRoute path="/shipment">
         <Shipment></Shipment>
         </PrivateRoute>
+        <Route path="/cart">
+          <Cart></Cart>
+        </Route>
         
         <Route path="*">
             <NotMatch></NotMatch>
