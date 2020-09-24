@@ -21,8 +21,9 @@ import Shipment from './components/Shipment/Shipment';
 export const UserContext = createContext();
 function App() {
   const [loggedInUser,setLoggedInUser]=useState({});
+  const [productCount,setProductCount]=useState([1]);
   return (
-    <UserContext.Provider value={[loggedInUser,setLoggedInUser]}>
+    <UserContext.Provider value={[loggedInUser,setLoggedInUser,productCount,setProductCount]}>
    
       
       <Router>
@@ -46,12 +47,12 @@ function App() {
           <ItemDetails></ItemDetails>
 
         </Route>
-        <PrivateRoute path="/shipment">
+        {/* <PrivateRoute path="/shipment">
         <Shipment></Shipment>
-        </PrivateRoute>
-        <Route path="/cart">
+        </PrivateRoute> */}
+        {/* <Route path="/cart">
           <Cart></Cart>
-        </Route>
+        </Route> */}
         
         <Route path="*">
             <NotMatch></NotMatch>

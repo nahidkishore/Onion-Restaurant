@@ -36,7 +36,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const FoodItem = (props) => {
-  const {name, price, picture,id,details} = props.item;
+  //console.log(props);
+  const {name, price, picture,id,details,handleAddItem} = props.item;
  
 const classes = useStyles();
 
@@ -63,13 +64,15 @@ history.push(`/item/${id}`)
         </Typography>
         <Typography variant="h5" component="p">
           {details}
-        </Typography>
-        <Typography className={classes.pos} color="textPrimary">
-          ${price}
-        </Typography>
+        </Typography> <br/> <br/>
+       
       
       </CardContent>
       </CardActionArea>
+      <Typography className="d-flex justify-content-between" >
+          ${price}  <button  onClick={() =>props.handleAddItem(props.item)} className="btn btn-danger">Buy</button>
+
+        </Typography>
       <CardActions>
      {/*  <Button onClick={handleDetails} style={{textAlign: 'center', paddingLeft:'35%'}}>Details More</Button> */}
       

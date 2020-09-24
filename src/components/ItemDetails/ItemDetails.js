@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 import fakeData from '../fakeData/fakeData';
-import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
-import Button from '@material-ui/core/Button';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee,faCartPlus } from '@fortawesome/free-solid-svg-icons';
+import {faCartPlus } from '@fortawesome/free-solid-svg-icons';
 import './ItemDetails.css';
 
 
@@ -13,11 +11,10 @@ import './ItemDetails.css';
 
 const ItemDetails = () => {
 
-  let history = useHistory();
+/*   let history = useHistory();
   const handleCheckout= () => {
   history.push("/shipment")
-  }
-
+  } */
   const {itemKey}= useParams();
   const [details,setDetails] = useState({});
   const {name,price, picture}=details;
@@ -30,7 +27,9 @@ const ItemDetails = () => {
   //(item);
   //console.log(details);
 
-
+const handleAddItem= (item) => {
+console.log('product added',item);
+}
   return (
   
 <div className="container">
@@ -41,7 +40,7 @@ const ItemDetails = () => {
         <h2> ${price}</h2>
         <br/>
         <br/>
-        <button onClick={handleCheckout} className="btn btn-danger"><FontAwesomeIcon icon={faCartPlus} />Add Cart</button>
+        <button onClick={()=> handleAddItem(details)} className="btn btn-danger"><FontAwesomeIcon icon={faCartPlus} />Add Cart</button>
         <br/>
         <br/>
         <img src={picture} alt=""/>
