@@ -4,10 +4,12 @@ import fakeData from '../fakeData/fakeData';
 import FoodItem from '../FoodItem/FoodItem';
 import FoodItemNav from '../FoodItemNav/FoodItemNav';
 import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
 import WhyChoose from '../WhyChoose/WhyChoose';
 
 
 const Home = () => {
+  
   const [items,setItems]=useState(fakeData);
   const handleItem=(item) =>{
     const lunchItem=fakeData.filter(data => data.category ===item);
@@ -20,8 +22,8 @@ const Home = () => {
     setCart(newCart);
   }
   return (
-    <div>
-     
+    <div >
+     <Header></Header>
       <div className='my-4'>
                 <FoodItemNav handleItem={handleItem}></FoodItemNav>
             </div>
@@ -41,11 +43,11 @@ const Home = () => {
 
 <WhyChoose></WhyChoose>
 <Footer></Footer>
+   <div>
 <Cart cart={cart}></Cart>
-   {/* <div>
-     <h2>order summary</h2>
-        <h5>summary:{cart.length}</h5>
-   </div> */}
+</div>
+
+
     </div>
   );
 };

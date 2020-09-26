@@ -5,7 +5,8 @@ const fakeData = [
     price: 6.99,
     picture:'https://iili.io/2BQt3l.png',
     category: 'breakfast',
-    details:'details here for more information'
+    details:'details here for more information',
+    description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse provident facilis enim, dolorum repudiandae quas tempore veritatis id, autem officia ad corrupti ipsum aperiam magni exercitationem mollitia maiores eveniet?'
 },
 {
     id:2,
@@ -13,28 +14,32 @@ const fakeData = [
     price: 9.99,
     picture: 'https://iili.io/2BQyu9.png',
     category: 'breakfast',
-    details:'details here for more information'
+    details:'details here for more information',
+    description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse provident facilis enim, dolorum repudiandae quas tempore veritatis id, autem officia ad corrupti ipsum aperiam magni exercitationem mollitia maiores eveniet?'
 },
 {   id:3,
     name: 'Baked Chicken',
     price: 10.99,
     picture: 'https://iili.io/2BZ9je.png',
     category: 'breakfast',
-    details:'details here for more information'
+    details:'details here for more information',
+    description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse provident facilis enim, dolorum repudiandae quas tempore veritatis id, autem officia ad corrupti ipsum aperiam magni exercitationem mollitia maiores eveniet?'
 },
 {   id:4,
     name: 'Eggs Benedict',
     price: 8.99,
     picture: 'https://iili.io/2BQt3l.png',
     category: 'breakfast',
-    details:'details here for more information'
+    details:'details here for more information',
+    description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse provident facilis enim, dolorum repudiandae quas tempore veritatis id, autem officia ad corrupti ipsum aperiam magni exercitationem mollitia maiores eveniet?'
 },
 {   id:5,
     name: 'Toast Croissant Fried egg',
     price: 19.99,
     picture: 'https://iili.io/2BQDa2.png',
     category: 'breakfast',
-    details:'details here for more information'
+    details:'details here for more information',
+    description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse provident facilis enim, dolorum repudiandae quas tempore veritatis id, autem officia ad corrupti ipsum aperiam magni exercitationem mollitia maiores eveniet?'
 },
 {   
     id:6,
@@ -42,7 +47,8 @@ const fakeData = [
     price: 3.99,
     picture: 'https://iili.io/2BQbvS.png',
     category: 'breakfast',
-    details:'details here for more information'
+    details:'details here for more information',
+    description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse provident facilis enim, dolorum repudiandae quas tempore veritatis id, autem officia ad corrupti ipsum aperiam magni exercitationem mollitia maiores eveniet?'
 },
 { 
   id:7,
@@ -50,7 +56,8 @@ const fakeData = [
   price: 23.99,
   picture: 'https://iili.io/2BZ0tn.png',
   category: 'lunch',
-  details:'details here for more information'
+  details:'details here for more information',
+  description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse provident facilis enim, dolorum repudiandae quas tempore veritatis id, autem officia ad corrupti ipsum aperiam magni exercitationem mollitia maiores eveniet?'
 },
 {
   id:8,
@@ -58,7 +65,8 @@ const fakeData = [
   price: 9.99,
   picture: 'https://iili.io/2BZcut.png',
   category: 'lunch',
-  details:'details here for more information'
+  details:'details here for more information',
+  description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse provident facilis enim, dolorum repudiandae quas tempore veritatis id, autem officia ad corrupti ipsum aperiam magni exercitationem mollitia maiores eveniet?'
 },
 {
   id:9,
@@ -66,7 +74,8 @@ const fakeData = [
   price: 6.99,
   picture: 'https://iili.io/2BZEns.png',
   category: 'lunch',
-  details:'details here for more information'
+  details:'details here for more information',
+  description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse provident facilis enim, dolorum repudiandae quas tempore veritatis id, autem officia ad corrupti ipsum aperiam magni exercitationem mollitia maiores eveniet?'
 },
 {
   id:10,
@@ -74,7 +83,8 @@ const fakeData = [
   price: 8.99,
   picture: 'https://iili.io/2BZlwX.png',
   category: 'lunch',
-  details:'details here for more information'
+  details:'details here for more information',
+  description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse provident facilis enim, dolorum repudiandae quas tempore veritatis id, autem officia ad corrupti ipsum aperiam magni exercitationem mollitia maiores eveniet?'
 },
 {
   id:11,
@@ -82,7 +92,8 @@ const fakeData = [
   price: 15.99,
   picture: 'https://iili.io/2BZ5ap.png',
   category: 'lunch',
-  details:'details here for more information'
+  details:'details here for more information',
+  description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse provident facilis enim, dolorum repudiandae quas tempore veritatis id, autem officia ad corrupti ipsum aperiam magni exercitationem mollitia maiores eveniet?'
 },
 {
   id:12,
@@ -90,7 +101,8 @@ const fakeData = [
   price: 7.99,
   picture: 'https://iili.io/2BZGMG.png',
   category: 'lunch',
-  details:'details here for more information'
+  details:'details here for more information',
+  description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse provident facilis enim, dolorum repudiandae quas tempore veritatis id, autem officia ad corrupti ipsum aperiam magni exercitationem mollitia maiores eveniet?'
 },
 
 {
@@ -99,7 +111,8 @@ const fakeData = [
   price: 9.99,
   picture: 'https://iili.io/2BZhS2.png',
   category: 'dinner',
-  details:'details here for more information'
+  details:'details here for more information',
+  description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse provident facilis enim, dolorum repudiandae quas tempore veritatis id, autem officia ad corrupti ipsum aperiam magni exercitationem mollitia maiores eveniet?'
 },
 {
   id:14,
@@ -107,7 +120,8 @@ const fakeData = [
   price: 10.99,
   picture: 'https://iili.io/2BZvou.png',
   category: 'dinner',
-  details:'details here for more information'
+  details:'details here for more information',
+  description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse provident facilis enim, dolorum repudiandae quas tempore veritatis id, autem officia ad corrupti ipsum aperiam magni exercitationem mollitia maiores eveniet?'
 },
 {
   id:15,
@@ -115,7 +129,8 @@ const fakeData = [
   price: 12.99,
   picture: 'https://iili.io/2BZw9S.png',
   category: 'dinner',
-  details:'details here for more information'
+  details:'details here for more information',
+  description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse provident facilis enim, dolorum repudiandae quas tempore veritatis id, autem officia ad corrupti ipsum aperiam magni exercitationem mollitia maiores eveniet?'
 },
 {
   id:16,
@@ -123,7 +138,8 @@ const fakeData = [
   price: 8.99,
   picture: 'https://iili.io/2BZNA7.png',
   category: 'dinner',
-  details:'details here for more information'
+  details:'details here for more information',
+  description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse provident facilis enim, dolorum repudiandae quas tempore veritatis id, autem officia ad corrupti ipsum aperiam magni exercitationem mollitia maiores eveniet?'
 },
 {
   id:17,
@@ -131,7 +147,8 @@ const fakeData = [
   price: 6.99,
   picture: 'https://iili.io/2BZON9.png',
   category: 'dinner',
-  details:'details here for more information'
+  details:'details here for more information',
+  description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse provident facilis enim, dolorum repudiandae quas tempore veritatis id, autem officia ad corrupti ipsum aperiam magni exercitationem mollitia maiores eveniet?'
 },
 {
   id:18,
@@ -139,7 +156,8 @@ const fakeData = [
   price: 9.99,
   picture: 'https://iili.io/2BZete.png',
   category: 'dinner',
-  details:'details here for more information'
+  details:'details here for more information',
+  description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse provident facilis enim, dolorum repudiandae quas tempore veritatis id, autem officia ad corrupti ipsum aperiam magni exercitationem mollitia maiores eveniet?'
 },
 ];
 export default fakeData;

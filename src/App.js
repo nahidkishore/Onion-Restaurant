@@ -14,25 +14,31 @@ import Home from './components/Home/Home';
 import ItemDetails from './components/ItemDetails/ItemDetails';
 import Login from './components/Login/Login';
 import NotMatch from './components/NotMatch/NotMatch';
-import PrivateRoute from './components/PrivateRoute/PrivateRoute';
-import Shipment from './components/Shipment/Shipment';
+
 
 
 export const UserContext = createContext();
+/* export const  orderItem = createContext(); */
+
 function App() {
   const [loggedInUser,setLoggedInUser]=useState({});
-  const [productCount,setProductCount]=useState([1]);
+  const [cart,setCart]=useState([]);
+  const [newCart, setNewCart] = useState({});
   return (
-    <UserContext.Provider value={[loggedInUser,setLoggedInUser,productCount,setProductCount]}>
+    <UserContext.Provider value={[loggedInUser,setLoggedInUser,cart,setCart,newCart,setNewCart]}>
    
+   <h3>{loggedInUser.name}</h3>
       
       <Router>
-      <Header></Header>
-      <Switch>
-      
-        <Route path="/home">
+      <Route path="/home">
           <Home></Home>
           
+        </Route>
+      <Switch>
+      
+      <Route path="/item/:itemKey">
+          <ItemDetails></ItemDetails>
+
         </Route>
         <Route exact path="/login">
             <Login></Login>
@@ -43,16 +49,15 @@ function App() {
           <Home></Home>
 
         </Route>
-        <Route path="/item/:itemKey">
-          <ItemDetails></ItemDetails>
+     
+       
+     {/*  <Route path="/checkout">
+        <Checkout></Checkout>
 
-        </Route>
-        {/* <PrivateRoute path="/shipment">
-        <Shipment></Shipment>
-        </PrivateRoute> */}
-        {/* <Route path="/cart">
+      </Route> */}
+          <Route path="/cart">
           <Cart></Cart>
-        </Route> */}
+        </Route>
         
         <Route path="*">
             <NotMatch></NotMatch>
@@ -61,6 +66,7 @@ function App() {
       </Switch>
         
       </Router>
+  
       </UserContext.Provider>
   
   );
