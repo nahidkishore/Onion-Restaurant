@@ -16,9 +16,9 @@ const ItemDetails = () => {
   }  */
 /*   const [cart,setCart,newCart,setNewCart]=useContext(UserContext); */
 
-  /* const[item,setItem]=useContext(orderItem); */
+
 /*   const [cart,setCart]=useState([]); */
-  /* const [selectedFood, setSelectedFood]=useState({}); */
+  
 
   const {itemKey}= useParams();
   const [details,setDetails] = useState({});
@@ -57,7 +57,7 @@ console.log(cart);
         <br/>
         <br/>
       
-        <button  onClick={() =>handleAddItem( details)} className="btn btn-danger"><FontAwesomeIcon icon={faCartPlus} />Add Cart</button>
+        <button  onClick={() =>handleAddItem()} className="btn btn-danger"><FontAwesomeIcon icon={faCartPlus} />Add Cart</button>
         <br/>
         <br/>
         <Link to="/home"><button>Back to home</button></Link>

@@ -18,14 +18,13 @@ import NotMatch from './components/NotMatch/NotMatch';
 
 
 export const UserContext = createContext();
-/* export const  orderItem = createContext(); */
 
 function App() {
   const [loggedInUser,setLoggedInUser]=useState({});
   const [cart,setCart]=useState([]);
-  const [newCart, setNewCart] = useState({});
+ 
   return (
-    <UserContext.Provider value={[loggedInUser,setLoggedInUser,cart,setCart,newCart,setNewCart]}>
+    <UserContext.Provider value={[loggedInUser,setLoggedInUser,cart,setCart,]}>
    
    <h3>{loggedInUser.name}</h3>
       
